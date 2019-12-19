@@ -10,3 +10,15 @@ PRIORITY: (1|2|3|4)
 ESTIMATE: \d+ (Minutes|Hours|Days) ACTUAL: \d+ (Minutes|Hours|Days)
 ISSUE: .+
 ----------
+
+Here is the template.
+
+----------
+ID: 
+NAME: 
+OWNER: 
+STATUS: 
+PRIORITY:
+ESTIMATE: ACTUAL:
+ISSUE:
+----------
