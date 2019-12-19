@@ -1,7 +1,7 @@
 # discord-bot
 discord-bot (better name pending) is a simple discord bot with a GUI.
 
-![US1.1](media/US1.3a.png)
+![US1.3](media/US1.3a.png)
 
 At the moment, it has the basic functionally of sending messages to a channel on a regular interval.
 
