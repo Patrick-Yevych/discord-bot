@@ -1,6 +1,7 @@
 package botview;
 
 import botcontroller.SayButtonPressEventHandler;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -14,6 +15,7 @@ public class SayPane extends HBox {
 	
 	public SayPane() {
 		super();
+		this.setPadding(new Insets(5));
 		this.msgField = new TextField();
 		this.intervalField = new TextField();
 		this.channelField = new TextField();
