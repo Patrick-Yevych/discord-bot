@@ -10,13 +10,16 @@ public class SayPane extends HBox {
 	private Button sayBtn;
 	private TextField msgField;
 	private TextField intervalField;
+	private TextField channelField;
 	
 	public SayPane() {
 		super();
-		this.sayBtn = new Button("say");
-		this.sayBtn.setOnAction(new SayButtonPressEventHandler());
 		this.msgField = new TextField();
 		this.intervalField = new TextField();
-		this.getChildren().addAll(new Label("Message: "), this.msgField, new Label("Interval: "), this.intervalField, this.sayBtn);
+		this.channelField = new TextField();
+		this.sayBtn = new Button("say");
+		this.sayBtn.setOnAction(new SayButtonPressEventHandler(msgField, intervalField, channelField));
+		this.getChildren().addAll(new Label("Message: "), this.msgField, new Label("Interval: "), this.intervalField,
+				new Label("Channel: "), this.channelField, this.sayBtn);
 	}
 }
