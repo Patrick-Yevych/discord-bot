@@ -7,12 +7,3 @@ PRIORITY: 2
 ESTIMATE: 4 Hours ACTUAL:
 ISSUE: Create a listener which logs all text messages on a specified channel when activated. Output the log to a file.
 ----------
-----------
-ID: USERSTORY 1.3
-NAME: config file
-OWNER: 
-STATUS: NotStarted
-PRIORITY: 3
-ESTIMATE: 4 Hours ACTUAL:
-ISSUE: Create a parser which will parse info from a text file (e.g. jda api token) and alter the state of BotModel accordingly.
-----------

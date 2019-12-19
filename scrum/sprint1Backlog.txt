@@ -9,3 +9,12 @@ PRIORITY: 2
 ESTIMATE: 4 Hours ACTUAL: 3 Hours
 ISSUE: Add functionality for users to input a message that the bot will say in the chat at a set interval.
 ----------
+----------
+ID: USERSTORY 1.3
+NAME: config file
+OWNER: Patrick Yevych
+STATUS: InProgress
+PRIORITY: 3
+ESTIMATE: 4 Hours ACTUAL:
+ISSUE: Create a parser which will parse info from a text file (e.g. jda api token) and alter the state of BotModel accordingly.
+----------
