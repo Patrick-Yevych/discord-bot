@@ -13,8 +13,8 @@ ISSUE: Add functionality for users to input a message that the bot will say in t
 ID: USERSTORY 1.3
 NAME: config file
 OWNER: Patrick Yevych
-STATUS: InProgress
+STATUS: Complete
 PRIORITY: 3
-ESTIMATE: 4 Hours ACTUAL:
+ESTIMATE: 4 Hours ACTUAL: 3 Hours
 ISSUE: Create a parser which will parse info from a text file (e.g. jda api token) and alter the state of BotModel accordingly.
 ----------
