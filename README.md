@@ -1,5 +1,5 @@
 # discord-bot
-discord-bot (better name pending) is a simple bot with a GUI for the discord messaging application. 
+discord-bot (better name pending) is a simple discord bot with a GUI.
 
 ![US1.1](media/US1.1.png)
 
