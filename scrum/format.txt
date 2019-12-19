@@ -1,0 +1,12 @@
+Format backlog entries like so.
+
+
+----------
+ID: (USERSTORY|BUG) \d+\.d+
+NAME: \w+
+OWNER: \w+
+STATUS: (NotStarted|InProgress|Completed|Abandoned)
+PRIORITY: (1|2|3|4)
+ESTIMATE: \d+ (Minutes|Hours|Days) ACTUAL: \d+ (Minutes|Hours|Days)
+ISSUE: .+
+----------

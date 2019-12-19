@@ -1,0 +1,9 @@
+----------
+ID: USERSTORY 1.1
+NAME: Say
+OWNER: Patrick Yevych
+STATUS: InProgress
+PRIORITY: 2
+ESTIMATE: 4 Hours ACTUAL:
+ISSUE: Add functionality for users to input a message that the bot will say in the chat at a set interval.
+----------
