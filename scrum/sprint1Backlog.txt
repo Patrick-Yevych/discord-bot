@@ -18,3 +18,12 @@ PRIORITY: 3
 ESTIMATE: 4 Hours ACTUAL: 3 Hours
 ISSUE: Create a parser which will parse info from a text file (e.g. jda api token) and alter the state of BotModel accordingly.
 ----------
+----------
+ID: USERSTORY 1.2
+NAME: logger
+OWNER: Patrick Yevych
+STATUS: InProgress
+PRIORITY: 2
+ESTIMATE: 4 Hours ACTUAL:
+ISSUE: Create a listener which logs all text messages on a specified channel when activated. Output the log to a file.
+----------
