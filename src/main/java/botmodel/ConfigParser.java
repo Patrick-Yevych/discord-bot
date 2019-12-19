@@ -9,9 +9,8 @@ import java.util.regex.Pattern;
 
 public class ConfigParser {
 	
-	private Pattern fileStart = Pattern.compile("^DISCORD-BOT CONFIGURATION FILE START$");
-	private Pattern fileEnd = Pattern.compile("^DISCORD-BOT CONFIGURATION FILE END$");
-	private Pattern token = Pattern.compile("^Token: (.+)$");
+	private Pattern fileStart = Pattern.compile("^DISCORD-BOTCONFIGURATIONFILESTART$");
+	private Pattern fileEnd = Pattern.compile("^DISCORD-BOTCONFIGURATIONFILEEND$");
 	private File file;
 	
 	public ConfigParser(File file) {
@@ -20,12 +19,14 @@ public class ConfigParser {
 	
 	public boolean parse() throws IOException {
 		BufferedReader reader = new BufferedReader(new FileReader(file));
-		Matcher m;
+		Matcher m = null;
 		int state = 1, lineNum = 0;
 		String line = "";
 		
 		while ((line = reader.readLine()) != null) {
 			lineNum++;
+			line = line.replace(" ", "");
+			line = line.trim();
 			switch (state) {
 				case 0:
 					return false;
@@ -37,9 +38,8 @@ public class ConfigParser {
 					}
 					return false;
 				case 2:
-					m = token.matcher(line);
 					if (m.matches()) {
-						BotModel.get().setToken(m.group(1));
+						BotModel.get(line); //BotModel initialized
 						state = 3;
 						break;
 					}

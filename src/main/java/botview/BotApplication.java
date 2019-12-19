@@ -1,7 +1,11 @@
 package botview;
 
+import java.io.File;
+import java.io.IOException;
+
 import botcontroller.LoadButtonPressEventHandler;
 import botmodel.BotModel;
+import botmodel.ConfigParser;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Scene;
@@ -19,7 +23,13 @@ public class BotApplication extends Application {
 
 	@Override
 	public void start(Stage stage) throws Exception {
-		BotModel.get();
+		ConfigParser parser = new ConfigParser(new File("cfg.txt"));
+		try {
+			parser.parse();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		VBox root = new VBox();
 		Scene scene = new Scene(root);
 		
