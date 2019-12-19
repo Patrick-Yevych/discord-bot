@@ -9,7 +9,8 @@ import net.dv8tion.jda.api.events.Event;
 
 public class BotModel {
 	private static BotModel instance = null;
-	private static String token = "NjU3MTg1MTM1MTUzOTA1Njk0.XfthnA.Yj91pjIx1g4uLguoel-LlULrzrI";
+	private static String token = "NjU3MTg1MTM1MTUzOTA1Njk0.Xftq0Q.k2j14NURgGUFsmjWkOjxmvXeTV4";
+	//https://discordapp.com/oauth2/authorize?&client_id=657185135153905694&scope=bot&permissions=8
 	private JDA api;
 	
 	private BotModel() {

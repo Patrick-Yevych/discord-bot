@@ -2,6 +2,7 @@ package botview;
 
 import botmodel.BotModel;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
@@ -22,6 +23,7 @@ public class BotApplication extends Application {
 		stage.setTitle("discord-bot");
 		stage.setScene(scene);
 		stage.show();
+		stage.setOnCloseRequest(e->{Platform.exit(); System.exit(0);});
 	}
 
 }
