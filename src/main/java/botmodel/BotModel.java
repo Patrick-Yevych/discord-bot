@@ -21,6 +21,9 @@ public class BotModel {
 		}
 	}
 	
+	public void setToken(String token) { BotModel.token = token; }
+	public String getToken() { return BotModel.token; }
+	
 	public synchronized static BotModel get() {
 		if (BotModel.instance == null) BotModel.instance = new BotModel();
 		return BotModel.instance;
@@ -29,5 +32,6 @@ public class BotModel {
 	public void sendMessage(String message, String channel) {
 		api.getTextChannelsByName(channel, false).get(0).sendMessage(message).queue();
 	}
+	
 	
 }
