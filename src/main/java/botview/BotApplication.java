@@ -33,17 +33,20 @@ public class BotApplication extends Application {
 		VBox root = new VBox();
 		Scene scene = new Scene(root);
 		
-		ProfanityPane profanityRoot = new ProfanityPane();
+		VBox profanityRoot = new VBox();
+		ProfanityPane profanityPane = new ProfanityPane();
 		Scene profanityScene = new Scene(profanityRoot);
 		
 		MainMenuBar menu = new MainMenuBar(stage, scene, profanityScene);
+		MainMenuBar menu1 = new MainMenuBar(stage, scene, profanityScene);
 		
 		root.getChildren().addAll(menu, new SayPane());
+		profanityRoot.getChildren().addAll(menu1, profanityPane);
 		
 		stage.setTitle("discord-bot");
 		stage.setScene(scene);
 		stage.show();
 		stage.setOnCloseRequest(e->{Platform.exit(); System.exit(0);});
 	}
-
+	
 }

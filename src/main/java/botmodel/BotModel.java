@@ -19,12 +19,12 @@ public class BotModel {
 	private ObservableList<String> profanities = FXCollections.observableArrayList();
 	
 	private BotModel(String token) {
-		super();
 		try {
 			api = new JDABuilder(AccountType.BOT).setToken(token).build();
 		} catch (LoginException e) {
 			e.printStackTrace();
 		}
+		api.addEventListener(new MessageListener());
 	}
 
 	public void setToken(String token) { BotModel.token = token; }
