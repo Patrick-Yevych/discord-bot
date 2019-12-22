@@ -20,10 +20,12 @@ ISSUE: Create a parser which will parse info from a text file (e.g. jda api toke
 ----------
 ----------
 ID: USERSTORY 1.2
-NAME: logger
+NAME: logger and profanity blocker
 OWNER: Patrick Yevych
-STATUS: InProgress
+STATUS: Complete
 PRIORITY: 2
-ESTIMATE: 4 Hours ACTUAL:
-ISSUE: Create a listener which logs all text messages on a specified channel when activated. Output the log to a file.
+ESTIMATE: 4 Hours ACTUAL: 4 Hours
+ISSUE: 
+- Create a listener which logs all text messages on a specified channel when activated. Output the log to a file.
+- Add a profanity blocker feature
 ----------
