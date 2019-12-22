@@ -1,9 +1,0 @@
-----------
-ID: USERSTORY 1.2
-NAME: logger
-OWNER: 
-STATUS: NotStarted
-PRIORITY: 2
-ESTIMATE: 4 Hours ACTUAL:
-ISSUE: Create a listener which logs all text messages on a specified channel when activated. Output the log to a file.
-----------

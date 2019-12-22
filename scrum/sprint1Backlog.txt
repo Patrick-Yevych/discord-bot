@@ -29,3 +29,30 @@ ISSUE:
 - Create a listener which logs all text messages on a specified channel when activated. Output the log to a file.
 - Add a profanity blocker feature
 ----------
+----------
+ID: USER STORY 1.21
+NAME: channel specific word blocker
+OWNER: Patrick Yevych
+STATUS: InProgress
+PRIORITY: 3
+ESTIMATE: 4 Hours ACTUAL: 
+ISSUE: generalize the profanity blocker so that it can be configured to block certain words on specific channels.
+----------
+----------
+ID: USER STORY 1.4
+NAME: save
+OWNER: 
+STATUS: NotStarted
+PRIORITY: 2
+ESTIMATE: 4 Hours ACTUAL:
+ISSUE: allows for the saving of profanity list and other tools' configurations.
+----------
+----------
+ID: USER STORY 1.41
+NAME: save-file template generator
+OWNER: 
+STATUS: 
+PRIORITY:
+ESTIMATE: ACTUAL:
+ISSUE: if a save file does not exist, then automatically generate one. 
+----------
