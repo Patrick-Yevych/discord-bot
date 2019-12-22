@@ -2,15 +2,10 @@ package botview;
 
 import java.io.File;
 import java.io.IOException;
-import botcontroller.LoadButtonPressEventHandler;
-import botcontroller.ToolMenuButtonPressEventHandler;
 import botmodel.ConfigParser;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Scene;
-import javafx.scene.control.Menu;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
