@@ -1,5 +1,6 @@
-package botmodel;
+package botcontroller;
 
+import botmodel.BotModel;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;

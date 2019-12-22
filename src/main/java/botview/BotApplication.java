@@ -2,9 +2,8 @@ package botview;
 
 import java.io.File;
 import java.io.IOException;
-
 import botcontroller.LoadButtonPressEventHandler;
-import botmodel.BotModel;
+import botcontroller.ToolMenuButtonPressEventHandler;
 import botmodel.ConfigParser;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -30,15 +29,14 @@ public class BotApplication extends Application {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+		
 		VBox root = new VBox();
 		Scene scene = new Scene(root);
 		
-		MenuBar menu = new MenuBar();
-		Menu fileMenu = new Menu("File");
-		MenuItem loadBtn = new MenuItem("Load");
-		loadBtn.setOnAction(new LoadButtonPressEventHandler(stage));
-		fileMenu.getItems().add(loadBtn);
-		menu.getMenus().add(fileMenu);
+		ProfanityPane profanityRoot = new ProfanityPane();
+		Scene profanityScene = new Scene(profanityRoot);
+		
+		MainMenuBar menu = new MainMenuBar(stage, scene, profanityScene);
 		
 		root.getChildren().addAll(menu, new SayPane());
 		

@@ -51,9 +51,9 @@ public class ConfigParser {
 					}
 					return false;
 			}
+			
 		}
-		
+		reader.close();
 		return true;
 	}
-	
 }
