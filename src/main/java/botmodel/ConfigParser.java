@@ -11,6 +11,9 @@ public class ConfigParser {
 	
 	private Pattern fileStart = Pattern.compile("^DISCORD-BOTCONFIGURATIONFILESTART$");
 	private Pattern fileEnd = Pattern.compile("^DISCORD-BOTCONFIGURATIONFILEEND$");
+	private Pattern profanityStart = Pattern.compile("^PROFANITYLISTSTART$");
+	private Pattern profanityEnd = Pattern.compile("^PROFANITYLISTEND$");
+	
 	private File file;
 	
 	public ConfigParser(File file) {
@@ -38,22 +41,33 @@ public class ConfigParser {
 					}
 					return false;
 				case 2:
-					if (m.matches()) {
 						BotModel.get(line); //BotModel initialized
 						state = 3;
 						break;
+				case 3:
+					m = profanityStart.matcher(line);
+					if (m.matches()) {
+						state = 4;
+						break;
 					}
 					return false;
-				case 3:
+				case 4:
+					m = profanityEnd.matcher(line);
+					if (m.matches()) {
+						state = 5;
+						break;
+					}
+					else BotModel.get().getProfanities().add(line);
+				case 5:
 					m = fileEnd.matcher(line);
 					if (m.matches()) {
 						return true;
 					}
 					return false;
 			}
+			
 		}
-		
+		reader.close();
 		return true;
 	}
-	
 }

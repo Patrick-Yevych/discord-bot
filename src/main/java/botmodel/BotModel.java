@@ -1,20 +1,19 @@
 package botmodel;
 
-import java.io.File;
-import java.io.IOException;
-
 import javax.security.auth.login.LoginException;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
-import net.dv8tion.jda.api.events.Event;
 
 public class BotModel {
 	private static BotModel instance = null;
-	private static String token = "";
-	//https://discordapp.com/oauth2/authorize?&client_id=657185135153905694&scope=bot&permissions=8
 	private JDA api;
+	private static String token = "";
+	//https://discordapp.com/oauth2/authorize?&client_id=657185135153905694&scope=bot&permissions=8\
+	private ObservableList<String> profanities = FXCollections.observableArrayList();
 	
 	private BotModel(String token) {
 		try {
@@ -22,8 +21,9 @@ public class BotModel {
 		} catch (LoginException e) {
 			e.printStackTrace();
 		}
+		api.addEventListener(new MessageListener());
 	}
-	
+
 	public void setToken(String token) { BotModel.token = token; }
 	public String getToken() { return BotModel.token; }
 	
@@ -40,5 +40,7 @@ public class BotModel {
 		api.getTextChannelsByName(channel, false).get(0).sendMessage(message).queue();
 	}
 	
+	public ObservableList<String> getProfanities() { return this.profanities; }
+	public JDA getApi() { return this.api; }
 	
 }
