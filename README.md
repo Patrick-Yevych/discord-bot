@@ -20,6 +20,8 @@ Official releases are yet to come. At the moment, the bot has the following basi
  
 ## Installation
 
+This section provides a step-by-step installation guide for users.
+
 #### 1. Install Java
 
 discord-bot requires Java version 1.8.0_221. It can be downloaded from [here](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
@@ -84,4 +86,3 @@ true
 [JDA MainWS-WriteThread] INFO WebSocketClient - Connected to WebSocket
 [JDA MainWS-ReadThread] INFO JDA - Finished Loading!
 ```
-
