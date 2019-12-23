@@ -23,7 +23,7 @@ public class ConfigWriter {
 				s += w + "\n";
 			}
 			s += "PROFANITYLISTEND\n";
-			s += "PROFANITYLISTEND\n";
+			s += "DISCORD-BOTCONFIGURATIONFILEEND\n";
 			System.out.println(s);
 			writer.write(s);
 			writer.close();
@@ -42,7 +42,7 @@ public class ConfigWriter {
 			s += "your-token-here\n";
 			s += "PROFANITYLISTSTART\n";
 			s += "PROFANITYLISTEND\n";
-			s += "PROFANITYLISTEND\n";
+			s += "DISCORD-BOTCONFIGURATIONFILEEND\n";
 			System.out.println(s);
 			writer.write(s);
 			writer.close();
