@@ -1,5 +1,7 @@
 package botview;
 
+
+
 import botcontroller.ProfanityControlButtonPressEventHandler;
 import botmodel.BotModel;
 import javafx.scene.control.Button;
@@ -26,6 +28,7 @@ public class ProfanityPane extends VBox {
 		
 		this.profanityList = new ListView<String>();
 		this.profanityList.setItems(BotModel.get().getProfanities());
+	
 		
 		controlsPane.getChildren().addAll(profanityInput, addBtn, removeBtn);
 		this.getChildren().addAll(controlsPane, this.profanityList);

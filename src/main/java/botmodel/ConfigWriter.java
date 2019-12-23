@@ -23,7 +23,7 @@ public class ConfigWriter {
 				s += w + "\n";
 			}
 			s += "PROFANITYLISTEND\n";
-			s += "DISCORD-BOTCONFIGURATIONFILEEND";
+			s += "PROFANITYLISTEND\n";
 			System.out.println(s);
 			writer.write(s);
 			writer.close();
@@ -34,4 +34,22 @@ public class ConfigWriter {
 		return true;
 	}
 	
+	public boolean makeFile() throws IOException {
+		try {
+			PrintWriter writer = new PrintWriter(file);
+			String s = "";
+			s += "DISCORD-BOTCONFIGURATIONFILESTART\n";
+			s += "your-token-here\n";
+			s += "PROFANITYLISTSTART\n";
+			s += "PROFANITYLISTEND\n";
+			s += "PROFANITYLISTEND\n";
+			System.out.println(s);
+			writer.write(s);
+			writer.close();
+		} catch (Exception e) {
+			System.out.println("Configurations file writing failed. Reason: " + e.toString());
+			return false;
+		}
+		return true;
+	}
 }

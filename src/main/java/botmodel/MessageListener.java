@@ -9,6 +9,8 @@ public class MessageListener extends ListenerAdapter {
 	public void onMessageReceived(MessageReceivedEvent event) {
 		if (event.isFromType(ChannelType.TEXT)) {
 			for (String p: BotModel.get().getProfanities()) {
+				p = p.trim();
+				p = p.replace(" ", "");
 				if (event.getMessage().getContentDisplay().contains(p)) {
 					event.getMessage().delete().queue();
 				}
