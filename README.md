@@ -1,9 +1,14 @@
 # Overview
-discord-bot (better name pending) is a moderation bot for discord servers. Its purpose is to provide moderation utilities 
+discord-bot (better name pending) is a moderation bot for discord servers. Its purpose is to provide moderation utilities to server owners through an (hopefully) easy-to-use graphical interface. 
 
-![US1.3](media/US1.3a.png)
+![say](media/say.png)
+![blocker](media/blocker.png)
 
-At the moment, it has the basic functionally of sending messages to a channel on a regular interval.
+Official release are yet to come. At the moment, the bot has the following basic functionalities:
+
+- send messages to a channel on a regular interval
+- block certain words/phrases from appearing on a server-wide level
+- load bot token and words/phrase to block from a configurations file
 
 ## Table of Contents
 
