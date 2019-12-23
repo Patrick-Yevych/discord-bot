@@ -4,7 +4,7 @@ discord-bot (better name pending) is a moderation bot for discord servers. Its p
 ![say](media/say.png)
 ![blocker](media/blocker.png)
 
-Official release are yet to come. At the moment, the bot has the following basic functionalities:
+Official releases are yet to come. At the moment, the bot has the following basic functionalities:
 
 - send messages to a channel on a regular interval
 - block certain words/phrases from appearing on a server-wide level
