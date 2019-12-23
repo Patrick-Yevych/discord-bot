@@ -42,17 +42,17 @@ ISSUE: generalize the profanity blocker so that it can be configured to block ce
 ID: USER STORY 1.4
 NAME: save
 OWNER: Patrick Yevych
-STATUS: InProgress
+STATUS: Complete
 PRIORITY: 2
-ESTIMATE: 4 Hours ACTUAL:
+ESTIMATE: 4 Hours ACTUAL: 1 Hour
 ISSUE: allows for the saving of profanity list and other tools' configurations.
 ----------
 ----------
 ID: USER STORY 1.41
 NAME: save-file template generator
-OWNER: 
-STATUS: 
+OWNER: Patrick Yevych
+STATUS: Complete
 PRIORITY: NotStarted
-ESTIMATE: ACTUAL:
+ESTIMATE: ACTUAL: 10 Minutes
 ISSUE: if a save file does not exist, then automatically generate one. 
 ----------
