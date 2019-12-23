@@ -1,0 +1,10 @@
+----------
+ID: USER STORY 1.5
+NAME: documentation
+OWNER: 
+STATUS: 
+PRIORITY: 1
+ESTIMATE: 4 Hours ACTUAL:
+ISSUE: Provide java documentation for all function, classes and packages. java documentation should also detail
+what design patterns are used and why.
+----------
