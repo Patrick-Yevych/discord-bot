@@ -32,8 +32,8 @@ ISSUE:
 ----------
 ID: USER STORY 1.21
 NAME: channel specific word blocker
-OWNER: Patrick Yevych
-STATUS: InProgress
+OWNER:
+STATUS: NotStarted
 PRIORITY: 3
 ESTIMATE: 4 Hours ACTUAL: 
 ISSUE: generalize the profanity blocker so that it can be configured to block certain words on specific channels.

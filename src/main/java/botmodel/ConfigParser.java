@@ -21,6 +21,7 @@ public class ConfigParser {
 	}
 	
 	public boolean parse() throws IOException {
+		try {
 		BufferedReader reader = new BufferedReader(new FileReader(file));
 		Matcher m = null;
 		int state = 1, lineNum = 0;
@@ -69,5 +70,10 @@ public class ConfigParser {
 		}
 		reader.close();
 		return true;
+		}
+		catch (Exception e) {
+			System.out.println("Configurations file loading failed. Reason: " + e.toString());
+			return false;
+		}
 	}
 }

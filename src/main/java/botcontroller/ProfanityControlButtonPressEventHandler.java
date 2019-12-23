@@ -17,11 +17,13 @@ public class ProfanityControlButtonPressEventHandler implements EventHandler<Act
 	@Override
 	public void handle(ActionEvent event) {
 		Button src = (Button) event.getSource();
-		if (src.getText() == "Add") {
-			BotModel.get().getProfanities().add(this.profanityInput.getText());
+		String input = this.profanityInput.getText();
+		
+		if (src.getText() == "Add" && !BotModel.get().getProfanities().contains(input)) {
+			BotModel.get().getProfanities().add(input);
 		}
 		else if (src.getText() == "Remove") {
-			BotModel.get().getProfanities().remove(this.profanityInput.getText());
+			BotModel.get().getProfanities().remove(input);
 		}
 	}
 }
