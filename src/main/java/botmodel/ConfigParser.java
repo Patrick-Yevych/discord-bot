@@ -60,6 +60,7 @@ public class ConfigParser {
 						break;
 					}
 					else BotModel.get().getProfanities().add(line);
+					break;
 				case 5:
 					m = fileEnd.matcher(line);
 					if (m.matches()) {

@@ -20,7 +20,7 @@ public class BotApplication extends Application {
 	public void start(Stage stage) throws Exception {
 		ConfigParser parser = new ConfigParser(new File("cfg.txt"));
 		try {
-			parser.parse();
+			System.out.println(parser.parse());
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
