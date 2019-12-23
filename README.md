@@ -57,7 +57,7 @@ Given that this bot is intended to moderate your discord server, it would be bes
 
 ## Usage
 
-To start the bot, run the following command in the terminal,
+To start the bot, run the following commands in the terminal,
 
 ```
 cd /path/to/bot/
