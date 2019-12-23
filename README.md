@@ -1,8 +1,8 @@
 ## Overview
 discord-bot (better name pending) is a moderation bot for discord servers. Its purpose is to provide moderation utilities to server owners through an (hopefully) easy-to-use graphical interface. 
 
-![say](media/say.png)
-![blocker](media/blocker.png)
+<img align = "centre" src="media/say.png">
+<img align = "right" src ="media/blocker.png">
 
 Official releases are yet to come. At the moment, the bot has the following basic functionalities:
 
