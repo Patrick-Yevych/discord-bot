@@ -56,3 +56,13 @@ PRIORITY: NotStarted
 ESTIMATE: ACTUAL: 10 Minutes
 ISSUE: if a save file does not exist, then automatically generate one. 
 ----------
+----------
+ID: BUG 1.0
+NAME: documentation
+OWNER: Patrick Yevych
+STATUS: InProgress
+PRIORITY: 1
+ESTIMATE: 4 Hours ACTUAL:
+ISSUE: Provide java documentation for all function, classes and packages. java documentation should also detail
+what design patterns are used and why.
+----------
