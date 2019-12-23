@@ -18,6 +18,7 @@ Official releases are yet to come. At the moment, the bot has the following basi
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribution](#contribution)
+  - [License](#license)
  
 ## Installation
 
@@ -93,6 +94,12 @@ true
 discord-bot requires the following dependencies: 
 
 - Java SE JDK 8u231 and JavaFX for Java 1.8. They can be downloaded from [here](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). 
-- [JDA version 4.0.0_79](https://github.com/DV8FromTheWorld/JDA). It is already set up in [pom.xml](pom.xml) .
+- [JDA version 4.0.0_79](https://github.com/DV8FromTheWorld/JDA). It is already set up in [pom.xml](pom.xml).
 
 Any IDE should work fine as long as it recognizes the JavaFX libraries. I specifically use [Eclipse IDE for Java Developers version 4.13.0](https://www.eclipse.org/downloads/packages/release/2019-09/r) with the [e(fx)clipse](http://download.eclipse.org/efxclipse/updates-released/3.0.0/site) plugin to develop the bot. [This](https://o7planning.org/en/10619/install-efxclipse-into-eclipse) website is a good resource on how to install e(fx)clipse. 
+
+The organization of this repository is based off of the feature branch workflow. Features are documented in the [scrum](scrum) folder and branches are created for each major feature developement. Ensure, that your fork follows this organization pattern and you document each feature development in the scrum backlogs.
+
+## License
+
+This repository is licensed under the GPL-3.0 license. See [LICENSE.md](LICENSE.md) for details.
