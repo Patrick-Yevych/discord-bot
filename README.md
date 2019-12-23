@@ -16,6 +16,7 @@ Official releases are yet to come. At the moment, the bot has the following basi
   - [Overview](#overview)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
+  - [Usage](#usage)
  
 ## Installation
 
@@ -49,9 +50,15 @@ DISCORD-BOTCONFIGURATIONFILEEND
 Since the bot is ran off of the client's computer, they will have to create their own application for it under the discord developers portal. To do this, go to the [discord developers portal](https://discordapp.com/developers/applications/). Under the <i>applications</i> tab, click on <b>New Application</b>. Then, under the <i>Bot</i> tab, click on <b>New Bot</b>. Once created, click the <b>Copy</b> button under the <i>token</i> section. In the `cfg.txt` file, replace `your-bot-token` with the copied text. Finally, go to the <i>general information</i> tab and click <b>Copy</b> under the <i>client id</i> section. Replace `YOUR-CLIENT-ID` in 
 `https://discordapp.com/oauth2/authorize?&client_id=YOUR-CLIENT-ID&scope=bot&permissions=8` with the copied text. Then use the link to add the bot to your server.
 
-#### 5. Grant permissions and run the bot
+#### 5. Grant permissions
 
-Given that this bot is intended to moderate your discord server, it would be best to grant it an admin role. Afterwards, you can run the bot with the following terminal command,
+Given that this bot is intended to moderate your discord server, it would be best to grant it an admin role. 
+
+## Usage
+
+To start the bot, run the following command in the terminal,
+
 ```
 java -jar /path/to/bot/discord-bot.jar 
 ```
+
