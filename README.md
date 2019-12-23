@@ -17,6 +17,7 @@ Official releases are yet to come. At the moment, the bot has the following basi
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Contribution](#contribution)
  
 ## Installation
 
@@ -24,7 +25,7 @@ This section provides a step-by-step installation guide for users.
 
 #### 1. Install Java
 
-discord-bot requires Java version 1.8.0_221. It can be downloaded from [here](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+discord-bot requires Java version 1.8. It can be downloaded from [here](https://www.java.com/en/download/).
 
 #### 2. Download the bot
 
@@ -86,3 +87,12 @@ true
 [JDA MainWS-WriteThread] INFO WebSocketClient - Connected to WebSocket
 [JDA MainWS-ReadThread] INFO JDA - Finished Loading!
 ```
+
+## Contribution
+
+discord-bot requires the following dependencies: 
+
+- Java SE JDK 8u231 and JavaFX for Java 1.8. They can be downloaded from [here](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). 
+- [JDA version 4.0.0_79](https://github.com/DV8FromTheWorld/JDA). It is already set up in [pom.xml](pom.xml) .
+
+Any IDE should work fine as long as it recognizes the JavaFX libraries. I specifically use [Eclipse IDE for Java Developers version 4.13.0](https://www.eclipse.org/downloads/packages/release/2019-09/r) with the [e(fx)clipse](http://download.eclipse.org/efxclipse/updates-released/3.0.0/site) plugin to develop the bot. [This](https://o7planning.org/en/10619/install-efxclipse-into-eclipse) website is a good resource on how to install e(fx)clipse. 
