@@ -1,6 +1,7 @@
 package botview;
 
 import botcontroller.LoadButtonPressEventHandler;
+import botcontroller.SaveButtonPressEventHandler;
 import botcontroller.ToolMenuButtonPressEventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Menu;
@@ -18,6 +19,10 @@ public class MainMenuBar extends MenuBar {
 		MenuItem loadBtn = new MenuItem("Load");
 		loadBtn.setOnAction(new LoadButtonPressEventHandler(stage));
 		fileMenu.getItems().add(loadBtn);
+		
+		MenuItem saveBtn = new MenuItem("Save");
+		saveBtn.setOnAction(new SaveButtonPressEventHandler(stage));
+		fileMenu.getItems().add(saveBtn);
 		
 		ToolMenuButtonPressEventHandler toolHandler = new ToolMenuButtonPressEventHandler(stage, sayScene, profanityScene);
 		MenuItem sayMenuBtn = new MenuItem("Say");

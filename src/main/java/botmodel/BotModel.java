@@ -17,6 +17,7 @@ public class BotModel {
 	
 	private BotModel(String token) {
 		try {
+			BotModel.token = token;
 			api = new JDABuilder(AccountType.BOT).setToken(token).build();
 		} catch (LoginException e) {
 			e.printStackTrace();

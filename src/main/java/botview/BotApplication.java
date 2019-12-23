@@ -1,6 +1,7 @@
 package botview;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import botmodel.ConfigParser;
 import javafx.application.Application;
@@ -19,17 +20,18 @@ public class BotApplication extends Application {
 	public void start(Stage stage) throws Exception {
 		ConfigParser parser = new ConfigParser(new File("cfg.txt"));
 		try {
-			parser.parse();
+			System.out.println(parser.parse());
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
-		}
+		} 
 		
 		VBox root = new VBox();
 		Scene scene = new Scene(root);
 		
 		VBox profanityRoot = new VBox();
 		ProfanityPane profanityPane = new ProfanityPane();
+		
 		Scene profanityScene = new Scene(profanityRoot);
 		
 		MainMenuBar menu = new MainMenuBar(stage, scene, profanityScene);
@@ -43,5 +45,4 @@ public class BotApplication extends Application {
 		stage.show();
 		stage.setOnCloseRequest(e->{Platform.exit(); System.exit(0);});
 	}
-	
 }

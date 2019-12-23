@@ -2,6 +2,7 @@ package botmodel;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.regex.Matcher;
@@ -58,7 +59,9 @@ public class ConfigParser {
 						state = 5;
 						break;
 					}
-					else BotModel.get().getProfanities().add(line);
+					else if (!BotModel.get().getProfanities().contains(line))
+						BotModel.get().getProfanities().add(line);
+					break;
 				case 5:
 					m = fileEnd.matcher(line);
 					if (m.matches()) {
@@ -70,8 +73,12 @@ public class ConfigParser {
 		}
 		reader.close();
 		return true;
-		}
-		catch (Exception e) {
+		} catch (FileNotFoundException e) {
+			System.out.println("Configuration file missing. A configuration file was created in the directory of this program.");
+			ConfigWriter writer = new ConfigWriter(new File("./cfg.txt"));
+			writer.makeFile();
+			return false;
+		} catch (Exception e) {
 			System.out.println("Configurations file loading failed. Reason: " + e.toString());
 			return false;
 		}
