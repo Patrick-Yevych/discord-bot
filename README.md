@@ -61,7 +61,7 @@ To start the bot, run the following commands in the terminal,
 
 ```
 cd /path/to/bot/
-java -jar /path/to/bot/discord-bot.jar 
+java -jar discord-bot.jar 
 ```
 
 #### Example:
