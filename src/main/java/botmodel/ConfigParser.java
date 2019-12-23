@@ -8,6 +8,11 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Parser object which parses the specified configuration file; obtaining bot tools configurations such as the bot token, profanity list, etc.
+ * @author Patrick Yevych
+ *
+ */
 public class ConfigParser {
 	
 	private Pattern fileStart = Pattern.compile("^DISCORD-BOTCONFIGURATIONFILESTART$");
@@ -17,10 +22,19 @@ public class ConfigParser {
 	
 	private File file;
 	
+	/**
+	 * 
+	 * @param the configuration file.
+	 */
 	public ConfigParser(File file) {
 		this.file = file;
 	}
 	
+	/**
+	 * Parse the configurations file and modifies BotModel accordingly.
+	 * @return true if parser succeeded and reached the accepting state. false otherwise.
+	 * @throws IOException
+	 */
 	public boolean parse() throws IOException {
 		try {
 		BufferedReader reader = new BufferedReader(new FileReader(file));

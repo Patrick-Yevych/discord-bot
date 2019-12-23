@@ -4,14 +4,28 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * Writer object which saves the bot's current tools configurations into the specified file.
+ * @author Patrick Yevych
+ *
+ */
 public class ConfigWriter {
 
 	private File file;
 	
+	/**
+	 * 
+	 * @param the configuration file.
+	 */
 	public ConfigWriter(File file) {
 		this.file = file;
 	}
 	
+	/**
+	 * Obtain the state of BotModel and writes it into the configuration file following the format of ConfigParser..
+	 * @return true if the writing was successful. false otherwise.
+	 * @throws IOException
+	 */
 	public boolean write() throws IOException {
 		try {
 			PrintWriter writer = new PrintWriter(file);
@@ -34,6 +48,12 @@ public class ConfigWriter {
 		return true;
 	}
 	
+	/**
+	 * Writes to the configuration file an empty configurations template.
+	 * Used to create new configurations files that follow the format of ConfigParser.
+	 * @return true if the writing was successful. false otherwise.
+	 * @throws IOException
+	 */
 	public boolean makeFile() throws IOException {
 		try {
 			PrintWriter writer = new PrintWriter(file);

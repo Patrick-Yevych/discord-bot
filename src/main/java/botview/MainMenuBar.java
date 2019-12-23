@@ -9,7 +9,18 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
+/**
+ * The main menu bar that appears at the top of the GUI.
+ * @author Patrick Yevych
+ *
+ */
 public class MainMenuBar extends MenuBar {
+	/**
+	 * 
+	 * @param the BotApplication stage.
+	 * @param the sayScene in BotApplication which contains the sayPane.
+	 * @param the profanityScene in BotApplication which contains the profanityPane.
+	 */
 	public MainMenuBar(Stage stage, Scene sayScene, Scene profanityScene) {
 		super();
 		
