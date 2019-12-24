@@ -8,7 +8,7 @@ Official releases are yet to come. At the moment, the bot has the following basi
 
 - send messages to a channel on a regular interval
 - block certain words/phrases from appearing on a server-wide level
-- load bot token and words/phrase to block from a configurations file
+- load bot token and words/phrase to block from a configuration file
 - saving bot token and words/phrase to block to a configuration file
 
 ## Table of Contents
