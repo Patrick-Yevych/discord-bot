@@ -116,7 +116,7 @@ which results in the following,
 
 The Profanity Filter tool allows the user to block certain words/phrases from appearing on all text channel. If a server member sends a message that contains one or more of the blocked words, then the bot will promptly delete that message. The user can add new words to block by typing in the word in the text box and then pressing Add. Likewise, the user can remove words that are currently in the block list by typing in the word and then pressing Remove.
 
-#### Example:
+##### Example:
 
 In the following example, the words "#%@!", "word" and the phrase "some phrase to block" are on the block list. Messages that contain these will be prompty deleted by the bot. 
 
