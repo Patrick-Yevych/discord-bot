@@ -22,7 +22,7 @@ public class ConfigWriter {
 	}
 	
 	/**
-	 * Obtain the state of BotModel and writes it into the configuration file following the format of ConfigParser..
+	 * Obtain the state of BotModel and writes it into the configuration file following the format of ConfigParser.
 	 * @return true if the writing was successful. false otherwise.
 	 * @throws IOException
 	 */

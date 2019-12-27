@@ -43,7 +43,7 @@ public class BotModel {
 	
 	/**
 	 * Retrieves the only instance of BotModel.
-	 * If it doesn't exist, intstanciates a new one with the provided bot token. 
+	 * If it doesn't exist, instantiate a new one with the provided bot token. 
 	 * @param the bot token.
 	 * @return the singleton BotModel object.
 	 */
@@ -69,7 +69,16 @@ public class BotModel {
 		api.getTextChannelsByName(channel, false).get(0).sendMessage(message).queue();
 	}
 	
+	/**
+	 * 
+	 * @return the profanities ObservableList.
+	 */
 	public ObservableList<String> getProfanities() { return this.profanities; }
+	
+	/**
+	 * 
+	 * @return the JDA object.
+	 */
 	public JDA getApi() { return this.api; }
 	
 }
