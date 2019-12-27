@@ -7,6 +7,11 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 
+/**
+ * The sayPane which provides an interface for the user to send messages to a channel on a timed interval.
+ * @author Patrick Yevych
+ *
+ */
 public class SayPane extends HBox {
 	private Button sayBtn;
 	private TextField msgField;

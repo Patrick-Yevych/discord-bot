@@ -10,12 +10,22 @@ import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+/**
+ * The GUI itself and the entry point of the program.
+ * @author Patrick Yevych
+ *
+ */
 public class BotApplication extends Application {
 
 	public static void main(String[] args) {
 		launch(args);
 	}
 
+	/**
+	 * the landing point of the program.
+	 * Creates all of the different tool panes and connects them to their event handlers and the BotModel.
+	 * @param the given stage.
+	 */
 	@Override
 	public void start(Stage stage) throws Exception {
 		ConfigParser parser = new ConfigParser(new File("cfg.txt"));

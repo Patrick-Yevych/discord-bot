@@ -10,6 +10,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
+/**
+ * The profanity pane which provides an interface for the user to control what words to censor.
+ * @author Patrick Yevych
+ *
+ */
 public class ProfanityPane extends VBox {
 	
 	private ListView<String> profanityList;

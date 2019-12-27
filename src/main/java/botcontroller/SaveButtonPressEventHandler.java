@@ -10,14 +10,27 @@ import javafx.event.EventHandler;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+/**
+ * EventHandler object for the save button in the menu bar.
+ * @author Patrick Yevych
+ *
+ */
 public class SaveButtonPressEventHandler implements EventHandler<ActionEvent> {
 
 	private Stage stage;
 	
+	/**
+	 * 
+	 * @param the BotApplication stage.
+	 */
 	public SaveButtonPressEventHandler(Stage stage) {
 		this.stage = stage;
 	}
 	
+	/**
+	 * Opens a file chooser window and creates a ConfigWriter to write to the chosen file.
+	 * @param the event.
+	 */
 	@Override
 	public void handle(ActionEvent event) {
 		FileChooser fileChooser = new FileChooser();
