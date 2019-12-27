@@ -11,7 +11,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
- * The GUI application itself and the landing point of the program.
+ * The GUI itself and the entry point of the program.
  * @author Patrick Yevych
  *
  */

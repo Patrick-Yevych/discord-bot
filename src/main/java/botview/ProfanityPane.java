@@ -11,7 +11,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 /**
- * The profanity pane that enables the user to control what words to censor.
+ * The profanity pane which provides an interface for the user to control what words to censor.
  * @author Patrick Yevych
  *
  */
