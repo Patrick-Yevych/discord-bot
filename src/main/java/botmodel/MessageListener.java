@@ -17,9 +17,10 @@ public class MessageListener extends ListenerAdapter {
 	 */
 	@Override
 	public void onMessageReceived(MessageReceivedEvent event) {
+		System.out.println(event.getMessage().getContentDisplay().trim().replace(" ", "").toLowerCase());
 		if (event.isFromType(ChannelType.TEXT)) {
 			for (String p: BotModel.get().getProfanities()) {
-				if (event.getMessage().getContentDisplay().trim().replace(" ", "").toLowerCase().contains(p.toLowerCase())) {
+				if (event.getMessage().getContentDisplay().trim().replace(" ", "").toLowerCase().contains(p.trim().replace(" ", "").toLowerCase())) {
 					event.getMessage().delete().queue();
 				}
 			}
