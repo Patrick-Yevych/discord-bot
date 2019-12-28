@@ -19,7 +19,9 @@ Official releases are yet to come. At the moment, the bot has the following basi
   - [Usage](#usage)
     - [Launch](#launch)
     - [Say Tool](#say-tool)
+      - [Demo](#example-1)
     - [Profanity Filter Tool](#profanity-filter-tool)
+      - [Demo](#example-2)
   - [Contribution](#contribution)
   - [License](#license)
  
