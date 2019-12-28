@@ -11,6 +11,8 @@ Official releases are yet to come. At the moment, the bot has the following basi
 - load bot token and words/phrase to block from a configuration file
 - save bot token and words/phrase to block to a configuration file
 
+Demos can be found below.
+
 ## Table of Contents
 
   - [Overview](#overview)
