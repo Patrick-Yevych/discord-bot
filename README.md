@@ -104,13 +104,9 @@ The Say tool allows the user to send a message to a specified channel on a timed
 
 ##### Example:
 
-In the following example, the message "This is an example message that is sent every 60 seconds to the text-channel." is sent to the channel "text-channel" every 60 seconds. The user input appears as follows,
+In the following example, the message "This is an example message that is sent every second to the text-channel." is sent to the channel "text-channel" every second, 
 
-<img align = "centre" src="media/sayExample.png">
-
-which results in the following,
-
-<img align = "centre" src="media/sayExampleOut.png">
+![blockerexample](media/sayDemo.gif)
 
 #### Profanity Filter Tool
 
