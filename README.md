@@ -1,5 +1,5 @@
 ## Overview
-discord-bot (better name pending) is a moderation bot for discord servers. Its purpose is to provide moderation utilities to server owners through an (hopefully) easy-to-use graphical interface. 
+discord-bot (better name pending) is a moderation bot for discord servers. Its purpose is to provide moderation utilities to server owners through an (hopefully) easy-to-use graphical user interface (GUI). 
 
 <img align = "centre" src="media/say.png">
 <img align = "right" src ="media/blocker.png">
@@ -17,6 +17,9 @@ Official releases are yet to come. At the moment, the bot has the following basi
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
+    - [Launch](#launch)
+    - [Say Tool](#say-tool)
+    - [Profanity Filter Tool](#profanity-filter-tool)
   - [Contribution](#contribution)
   - [License](#license)
  
@@ -61,6 +64,8 @@ Given that this bot is intended to moderate your discord server, it would be bes
 
 ## Usage
 
+#### Launch
+
 To start the bot, run the following commands in the terminal,
 
 ```
@@ -68,7 +73,7 @@ cd /path/to/bot/
 java -jar discord-bot.jar 
 ```
 
-#### Example:
+##### Example:
 
 ```
 Microsoft Windows [Version 10.0.18362.535]
@@ -88,6 +93,34 @@ true
 [JDA MainWS-WriteThread] INFO WebSocketClient - Connected to WebSocket
 [JDA MainWS-ReadThread] INFO JDA - Finished Loading!
 ```
+
+The user is able to save/load the configurations file and switch between moderation tools via the menu bar at the top of the program.
+
+There are currently 2 moderation tools: Say and Profanity Filter.
+
+#### Say Tool
+
+The Say tool allows the user to send a message to a specified channel on a timed interval. The user specifies the message to send, the interval (in seconds) to send the message on and the name of the channel to send the message to using the textboxes. Channels with duplicate names may cause issues with the tool. The say button acts as a toggle button; allowing the user to turn the tool on or off.
+
+##### Example:
+
+In the following example, the message "This is an example message that is sent every 60 seconds to the text-channel." is sent to the channel "text-channel" every 60 seconds. The user input appears as follows,
+
+<img align = "centre" src="media/sayExample.png">
+
+which results in the following,
+
+<img align = "centre" src="media/sayExampleOut.png">
+
+#### Profanity Filter Tool
+
+The Profanity Filter tool allows the user to block certain words/phrases from appearing on all text channel. If a server member sends a message that contains one or more of the blocked words, then the bot will promptly delete that message. The user can add new words to block by typing in the word in the text box and then pressing Add. Likewise, the user can remove words that are currently in the block list by typing in the word and then pressing Remove.
+
+##### Example:
+
+In the following example, the words "#%@!", "word" and the phrase "some phrase to block" are on the block list. Messages that contain these will be prompty deleted by the bot. 
+
+![blockerexample](media/blocker.png)
 
 ## Contribution
 
