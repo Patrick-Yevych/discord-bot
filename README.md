@@ -118,9 +118,9 @@ The Profanity Filter tool allows the user to block certain words/phrases from ap
 
 ##### Example:
 
-In the following example, the words "#%@!", "word" and the phrase "some phrase to block" are on the block list. Messages that contain these will be prompty deleted by the bot. 
+In the following example, messages that contain the word "hate" are blocked,
 
-![blockerexample](media/blocker.png)
+![blockerexample](media/blockerDemo.gif)
 
 ## Contribution
 
