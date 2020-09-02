@@ -1,5 +1,5 @@
 ## Overview
-discord-bot (better name pending) is a moderation bot for discord servers. Its purpose is to provide moderation utilities to server owners through an (hopefully) easy-to-use graphical user interface (GUI). 
+discord-bot (better name pending) is a moderation bot for discord servers. Its purpose is to provide moderation utilities to server owners through an easy-to-use graphical user interface (GUI). 
 
 <img align = "centre" src="media/say.png">
 <img align = "right" src ="media/blocker.png">
