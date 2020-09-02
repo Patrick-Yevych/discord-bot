@@ -135,4 +135,4 @@ The organization of this repository is based off of the feature branch workflow.
 
 ## License
 
-This repository is licensed under the GPL-3.0 license. See [LICENSE.md](LICENSE) for details.
+This repository is licensed under the GPL-3.0 license. See [LICENSE](LICENSE) for details.
