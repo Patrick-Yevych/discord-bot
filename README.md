@@ -131,7 +131,7 @@ discord-bot requires the following dependencies:
 
 Any IDE should work fine as long as it recognizes the JavaFX libraries. I specifically use [Eclipse IDE for Java Developers version 4.13.0](https://www.eclipse.org/downloads/packages/release/2019-09/r) with the [e(fx)clipse](http://download.eclipse.org/efxclipse/updates-released/3.0.0/site) plugin to develop the bot. [This](https://o7planning.org/en/10619/install-efxclipse-into-eclipse) website is a good resource on how to install e(fx)clipse. 
 
-The organization of this repository is based off of the feature branch workflow. Features are documented in the [scrum](scrum) folder and branches are created for each major feature developement. Ensure that your fork follows this organization pattern and you document each feature development in the scrum backlogs.
+The organization of this repository is based off of the feature branch workflow. Features are documented in the [scrum](scrum) folder and branches are created for each major feature developement. Ensure that your pull requests follow this organization pattern and you document each feature development in the scrum backlogs.
 
 ## License
 
