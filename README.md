@@ -4,7 +4,7 @@ discord-bot (better name pending) is a moderation bot for discord servers. Its p
 <img align = "centre" src="media/say.png">
 <img align = "right" src ="media/blocker.png">
 
-Official releases are yet to come. At the moment, the bot has the following basic functionalities:
+At the moment, the bot has the following basic functionalities:
 
 - send messages to a channel on a regular interval
 - block certain words/phrases from appearing on a server-wide level
@@ -37,7 +37,7 @@ discord-bot requires Java version 1.8. It can be downloaded from [here](https://
 
 #### 2. Download the bot
 
-discord-bot is ment to be hosted on a client's computer/server. Therfore, you should download and run the bot off of your host computer. To do so, download the runnable jar file [discord-bot.jar](discord-bot.jar) from the repository. In the future and once more features are added to the bot, official releases will be downloadable from the release section of this repository.
+discord-bot is ment to be hosted on a client's computer/server. Therfore, you should download and run the bot off of your host computer. To do so, either download the latest stable release from the release section of the repository, or the latest build, [discord-bot.jar](discord-bot.jar) from the repository.
 
 #### 3. Create the cfg.txt file
 
